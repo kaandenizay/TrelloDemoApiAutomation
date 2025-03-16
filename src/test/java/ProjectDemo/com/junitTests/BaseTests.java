@@ -14,7 +14,7 @@ public class BaseTests {
 
 
     @BeforeAll
-    public void setup() {
+    public static void setup() {
         log.info("-----Tests are starting-----");
     }
 

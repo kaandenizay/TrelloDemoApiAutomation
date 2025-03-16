@@ -8,8 +8,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
 public class JSONProcessManager {
@@ -24,20 +22,15 @@ public class JSONProcessManager {
 
             JSONObject jsonObject = new JSONObject(content);
 
-            switch (type){
-                case "string":
-                    value = jsonObject.getString(key);
-                    break;
-                case "int":
-                    value = jsonObject.getInt(key);
-                    break;
-                case "map":
-                    value = jsonObject.getJSONObject(key).toMap();
-                    break;
-            }
+            value = switch (type) {
+                case "string" -> jsonObject.getString(key);
+                case "int" -> jsonObject.getInt(key);
+                case "map" -> jsonObject.getJSONObject(key).toMap();
+                default -> value;
+            };
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
 
         return value;
@@ -49,7 +42,7 @@ public class JSONProcessManager {
             objectMapper.writeValue(new File(filePath), trelloTestData);
             System.out.println("Map has been written to JSON file.");
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 

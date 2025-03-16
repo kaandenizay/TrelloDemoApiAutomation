@@ -10,7 +10,6 @@ import ProjectDemo.com.services.cards.CardGetAPIServices;
 import ProjectDemo.com.services.cards.CardPostAPIServices;
 import ProjectDemo.com.services.cards.CardPutAPIServices;
 import lombok.extern.log4j.Log4j2;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
