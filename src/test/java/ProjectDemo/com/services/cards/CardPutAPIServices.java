@@ -6,8 +6,6 @@ import com.utilities.FakerDataCreator;
 import com.utilities.JSONProcessManager;
 import lombok.extern.log4j.Log4j2;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 import static ProjectDemo.com.services.ApiBaseMethods.*;

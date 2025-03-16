@@ -1,13 +1,7 @@
 package ProjectDemo.com.services.cards;
 
-import ProjectDemo.com.pojo.CardsPOJO;
 import ProjectDemo.com.services.ApiBaseMethods;
-import com.utilities.FakerDataCreator;
-import com.utilities.JSONProcessManager;
-import com.utilities.Utils;
 import lombok.extern.log4j.Log4j2;
-
-import java.util.Random;
 
 import static ProjectDemo.com.services.ApiBaseMethods.*;
 import static ProjectDemo.com.services.cards.CardPostAPIServices.cardIds;

@@ -19,13 +19,6 @@ import org.junit.jupiter.api.TestInstance;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TrelloTests extends BaseTests{
 
-
-
-    @BeforeEach
-    public void initializePages(){
-
-    }
-
     @Test
     @DisplayName("Search Product, Add To Cart and Clear Cart")
     void searchProduct(){

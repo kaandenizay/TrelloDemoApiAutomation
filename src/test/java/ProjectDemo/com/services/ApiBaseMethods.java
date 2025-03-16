@@ -9,11 +9,9 @@ import io.restassured.parsing.Parser;
 import io.restassured.path.json.exception.JsonPathException;
 import io.restassured.response.Response;
 import lombok.extern.log4j.Log4j2;
-import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 import static io.restassured.RestAssured.*;
 
@@ -22,9 +20,9 @@ public class ApiBaseMethods {
 
     public static Response response;
     public static String finalUrl;
-    public static String baseUrlTrello = ConfigurationReader.getProperty("trello.url");
-    public static String key = ConfigurationReader.getProperty("trello.key");
-    public static String token = ConfigurationReader.getProperty("trello.token");
+    public static final String baseUrlTrello = ConfigurationReader.getProperty("trello.url");
+    public static final String key = ConfigurationReader.getProperty("trello.key");
+    public static final String token = ConfigurationReader.getProperty("trello.token");
     public static FakerDataCreator faker;
     public static Map<String, String> trelloJSONMap = new HashMap<>();
 
@@ -100,7 +98,7 @@ public class ApiBaseMethods {
     public static Response deleteRequest(String endpoint) {
         defaultParser = Parser.JSON;
         baseURI = endpoint;
-        Response r = null;
+        Response r;
         System.out.println("baseURI: " + baseURI);
         try {
             r = given().headers("Content-Type", "application/json")

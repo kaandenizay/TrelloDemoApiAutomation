@@ -1,7 +1,6 @@
 package ProjectDemo.com.services.boards;
 
 import ProjectDemo.com.services.ApiBaseMethods;
-import com.utilities.FakerDataCreator;
 import lombok.extern.log4j.Log4j2;
 
 import java.util.List;

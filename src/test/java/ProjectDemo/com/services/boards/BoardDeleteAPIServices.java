@@ -1,7 +1,6 @@
 package ProjectDemo.com.services.boards;
 
 import ProjectDemo.com.services.ApiBaseMethods;
-import ProjectDemo.com.services.cards.CardAbstractClass;
 import lombok.extern.log4j.Log4j2;
 
 import static ProjectDemo.com.services.ApiBaseMethods.*;

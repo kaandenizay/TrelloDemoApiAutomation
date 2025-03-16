@@ -1,9 +1,7 @@
 package ProjectDemo.com.services.cards;
 
-import ProjectDemo.com.pojo.BoardsPOJO;
 import ProjectDemo.com.pojo.CardsPOJO;
 import ProjectDemo.com.services.ApiBaseMethods;
-import ProjectDemo.com.services.boards.BoardAbstractClass;
 import lombok.extern.log4j.Log4j2;
 
 import static ProjectDemo.com.services.ApiBaseMethods.*;

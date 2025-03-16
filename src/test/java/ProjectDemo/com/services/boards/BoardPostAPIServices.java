@@ -4,9 +4,6 @@ import ProjectDemo.com.services.ApiBaseMethods;
 import com.utilities.FakerDataCreator;
 import lombok.extern.log4j.Log4j2;
 
-import java.util.List;
-import java.util.Random;
-
 import static ProjectDemo.com.services.ApiBaseMethods.*;
 
 @Log4j2

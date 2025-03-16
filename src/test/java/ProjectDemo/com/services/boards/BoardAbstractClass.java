@@ -1,10 +1,5 @@
 package ProjectDemo.com.services.boards;
 
-import ProjectDemo.com.services.ApiBaseMethods;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public abstract class BoardAbstractClass {
 
     static String finalQueryParam = "?";
